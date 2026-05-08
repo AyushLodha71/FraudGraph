@@ -79,6 +79,6 @@ for threshold in [10, 20, 30]:
     low_data = data[data['card1'].isin(low)]
     fraud_in_low = (low_data['isFraud'] == 1).sum()
     print(f"\n--- Threshold: {threshold} ---")
-    print(f"Cards below threshold: {len(low)} of {card_counts_desc.nunique()}")
+    print(f"Cards below threshold: {len(low)} of {len(card_counts_desc)}")
     print(f"Transactions excluded: {len(low_data)} ({len(low_data)/len(data)*100:.1f}%)")
     print(f"Fraud excluded: {fraud_in_low} ({fraud_in_low/data['isFraud'].sum()*100:.1f}% of all fraud)")
