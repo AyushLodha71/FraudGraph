@@ -25,8 +25,7 @@ def calculate_suspicion(transaction, card_baseline, global_stats):
     return suspicion_score
 
 def calculate_suspicion_vectorized(data, card_baseline, global_stats):
-    cols = ['TransactionAmt','C1','C2','C3','C4','C5',
-        'C6','C7','C8','C9','C10','C11','C12','C13','C14']
+    cols = ['TransactionAmt','V95','V96','V97','V98','V99','V100']
 
     # fill missing baseline values with global stats for low-count cards
     for col in cols:
