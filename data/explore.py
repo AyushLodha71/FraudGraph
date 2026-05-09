@@ -82,3 +82,7 @@ for threshold in [10, 20, 30]:
     print(f"Cards below threshold: {len(low)} of {len(card_counts_desc)}")
     print(f"Transactions excluded: {len(low_data)} ({len(low_data)/len(data)*100:.1f}%)")
     print(f"Fraud excluded: {fraud_in_low} ({fraud_in_low/data['isFraud'].sum()*100:.1f}% of all fraud)")
+
+
+print(data[['C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14']].isnull().sum())
+print(data[['C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14']].describe())
