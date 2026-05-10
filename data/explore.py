@@ -86,3 +86,9 @@ for threshold in [10, 20, 30]:
 
 print(data[['C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14']].isnull().sum())
 print(data[['C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14']].describe())
+
+print(data[['ProductCD', 'addr1', 'addr2', 'P_emaildomain', 'R_emaildomain']].nunique())
+print(data[['ProductCD', 'addr1', 'addr2', 'P_emaildomain', 'R_emaildomain']].isnull().sum())
+
+#print(data.columns.tolist())
+print(data.columns[20:40])
