@@ -5,4 +5,7 @@ venv/
 .env
 *.csv
 *.zip
+*.pkl
+*.joblib
+models/
 
